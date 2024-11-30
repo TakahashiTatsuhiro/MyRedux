@@ -3,8 +3,8 @@ import { AppDispatch, RootState } from "./redux/store.ts";
 import {decrement, increment} from "./redux/counterSlice.ts";
 
 function App() {
-  const value = useSelector<RootState, number>((state) => state.counter.value);
-  const dispatch: AppDispatch = useDispatch();
+  const value = useSelector<RootState, number>((state) => state.counter.value)
+  const dispatch: AppDispatch = useDispatch()
 
   const handleIncrement = () => {
     dispatch(increment())
